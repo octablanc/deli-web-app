@@ -1,0 +1,63 @@
+.field {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid rgb(223, 223, 223);
+    outline: none;
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: calc(100% -18px);
+}
+
+.inputSpan {
+    font-size: 15px;
+}
+
+.field input:focus{
+    border-color: #ff987e;
+}
+
+.inputSelected {
+    color: #ff5023;
+}
+
+.inputError {
+    border-color: rgb(248, 0, 0);
+}
+
+.spanError {
+    color: rgb(255, 97, 97);
+}
+
+.errorMessage {
+    color: red;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 410px) {
+    .input {
+        margin-top: 0px;
+        font-size: 13px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    .inputSpan{
+        font-size: 13px
+    }
+    .errorMessage{
+        font-size: 11px;
+    }
+    .field{
+        margin-bottom: 15px;
+    }
+}

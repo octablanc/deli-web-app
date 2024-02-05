@@ -1,0 +1,23 @@
+.layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 280px) {
+    .container {
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+}
+
