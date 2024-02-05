@@ -57,4 +57,5 @@ VITE_ACCESS_USER="usuario habilidato para el acceso a los endpoints"
 ```bash
 npm start
 ```
+
 La aplicación se abrirá en tu navegador, conectada al servidor backend.
