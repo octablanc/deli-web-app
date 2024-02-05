@@ -75,7 +75,10 @@ export function useSingUpLogic() {
         else{
             setLoading(true);
             APIConnection.createUser(user)
-                .then(()=> setUser(userInitialValues))
+                .then(()=> {
+                    setUser(userInitialValues);
+                    window.alert('Usuario creado correctamente!');
+                })
                 .catch(({response})=> window.alert(response.data.message))
                 .finally(()=> setLoading(false));
         }

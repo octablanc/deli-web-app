@@ -9,7 +9,7 @@ lerna-debug.log*
 
 # Directorios a ignorar
 node_modules
-env
+.env
 
 # Otros archivos y directorios
 dist
