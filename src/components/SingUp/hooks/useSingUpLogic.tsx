@@ -46,7 +46,7 @@ export function useSingUpLogic() {
         {
             span: 'Edad',
             value: user.age.toString(),
-            onChange: (age: string) => setUser({ ...user, age: +age }),
+            onChange: (age: string) => setUser({ ...user, age: age }),
             validation: (age:string)=> !(+age>=1 && +age<=100),
             errorMessage: 'ingrese una edad válida en 1 y 100',
             getError: (error: boolean) => setUserError({ ...userError, age: error })
